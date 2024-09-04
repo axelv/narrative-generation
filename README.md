@@ -109,7 +109,7 @@ Let's say we automatically provide the following variables on each question/grou
 - `%qitem` is a special variable that refers to the current question item. This is common in FHIRPath implementations of Questionnaires.
 - `%context` is a special variable that refers to the current context of the FHIRPath expression. Typically this is the corresponding `QuestionnaireResponse` item.
 
-These variables can be used to create simple narratives. For example
+These variables can be used to create simple narratives which can serve as a default. For example
 
 ```liquid
 {{question}}: {{answer}}
@@ -138,3 +138,6 @@ The patient was diagnosed with {{severity} {{diagnosis}}.
 **Note:**
 - This sentence will probably feel computer-generated because of the bad adjective usage, but it's a good starting point for the user to start editing the narrative.
 - ⚠️ there is no guarantee that these variables will resolve to a value. The linkId's are hardcoded and might not be present in the QuestionnaireResponse. Is this a problem?
+
+
+Excallidraw [sketch](https://link.excalidraw.com/l/1p5JehWfzk2/85g9sR13YfI)
