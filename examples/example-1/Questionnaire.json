@@ -1,0 +1,51 @@
+{
+  "resourceType": "Questionnaire",
+  "url": "example-1",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Materiaal verbruik",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Sheaths type",
+          "type": "string",
+          "answerOption": [
+            {
+              "valueString": "Cordis"
+            },
+            {
+              "valueString": "Terumo"
+            },
+            {
+              "valueString": "Cook"
+            },
+            {
+              "valueString": "iSleeve"
+            },
+            {
+              "valueString": "Super sheath xl 12f"
+            }
+          ]
+        },
+        {
+          "linkId": "1.2",
+          "text": "Sheaths maat",
+          "type": "decimal",
+          "answerOption": [
+            {
+              "valueDecimal": 5
+            },
+            {
+              "valueDecimal": 6
+            },
+            {
+              "valueDecimal": 8
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

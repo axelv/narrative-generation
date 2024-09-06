@@ -1,0 +1,68 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "postdillatatie-questionnaire",
+  "status": "active",
+  "subjectType": ["Patient"],
+  "item": [
+    {
+      "linkId": "q1",
+      "text": "Postdillatatie",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "q1.1",
+          "text": "Uitgevoerd",
+          "type": "string",
+          "answerOption": [
+            {
+              "valueString": "ja"
+            },
+            {
+              "valueString": "nee"
+            }
+          ]
+        },
+        {
+          "linkId": "q1.2",
+          "text": "Waarom uitgevoerd?",
+          "type": "string",
+          "answerOption": [
+            {
+              "valueString": "para valvulair lek"
+            },
+            {
+              "valueString": "onvoldoende ontplooing"
+            },
+            {
+              "valueString": "resterende gradient"
+            }
+          ]
+        },
+        {
+          "linkId": "q1.3",
+          "text": "Soort ballon",
+          "type": "string",
+          "answerOption": [
+            {
+              "valueString": "Z_med II (numed)"
+            },
+            {
+              "valueString": "Atlas Gold (bard)"
+            },
+            {
+              "valueString": "Vacs II (osypka)"
+            },
+            {
+              "valueString": "Nucleus (numed)"
+            }
+          ]
+        },
+        {
+          "linkId": "q1.4",
+          "text": "Maat ballon",
+          "type": "decimal"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "questionnaire": "example-1",
+  "status": "completed",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Materiaal verbruik",
+      "item": [
+        {
+          "linkId": "1.1",
+          "text": "Sheaths type",
+          "answer": [
+            {
+              "valueString": "Cordis"
+            }
+          ]
+        },
+        {
+          "linkId": "1.2",
+          "text": "Sheaths maat",
+          "answer": [
+            {
+              "valueDecimal": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

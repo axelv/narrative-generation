@@ -1,0 +1,6 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "questionnaire": "example-1",
+  "status": "completed",
+  "item": []
+}

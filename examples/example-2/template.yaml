@@ -1,0 +1,22 @@
+variable:
+  - name: "uitgevoerd"
+    language: "text/fhirpath"
+    expression: "%context.item.where(linkId = 'q1.1').answer.value"
+  - name: "reden"
+    language: "text/fhirpath"
+    expression: "%context.item.where(linkId = 'q1.2').answer.value"
+  - name: "soort-ballon"
+    language: "text/fhirpath"
+    expression: "%context.item.where(linkId = 'q1.3').answer.value"
+  - name: "maat-ballon"
+    language: "text/fhirpath"
+    expression: "%context.item.where(linkId = 'q1.4').answer.value"
+textNarrative: >
+  {% if uitgevoerd == 'ja' %}
+    {%- if reden != empty -%}
+      Wegens {{ reden }} beslissing tot postdilatatie. Opvoeren van de {{ maat-ballon }} {{soort-ballon}} tot in de klepprothese.
+    {%- else -%}
+      De postdilatatie werd uitgevoerd.
+    {%- endif -%}
+  {%- else %}
+  {%- endif %}

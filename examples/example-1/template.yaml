@@ -1,0 +1,11 @@
+variable:
+  - name: "sheat_type"
+    language: "text/fhirpath"
+    expression: "%context.item.where(linkId = '1.1').answer.value"
+  - name: "sheat_size"
+    language: "text/fhirpath"
+    expression: "%context.item.where(linkId = '1.2').answer.value"
+  - name: "no_answer"
+    language: "text/fhirpath"
+    expression: "%context.item.answer.value.empty()"
+textNarrative: "{% unless no_answer -%}\nPlaatsen van een {{sheat_type}} {{sheat_size}} sheath\n{% endunless %}"
